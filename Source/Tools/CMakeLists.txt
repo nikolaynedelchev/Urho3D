@@ -36,6 +36,11 @@ if (URHO3D_ANGELSCRIPT OR URHO3D_LUA)
     add_subdirectory (Urho3DPlayer)
 endif ()
 
+if (URHO3D_ANGELSCRIPT OR URHO3D_LUA)
+    add_subdirectory (Urho3DPlayerTest)
+    add_subdirectory (Test2DApp)
+endif ()
+
 # Build host-tools using host compiler toolchain
 if (CMAKE_CROSSCOMPILING)
     check_native_compiler_exist ()
